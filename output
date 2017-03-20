@@ -1,0 +1,433 @@
+Version 1.4.0, Git revision e714f1dd3fade19496d91bd6a017e435a96a6bcd (4640 commits) x86_64 hpack-0.17.0
+2017-03-21 10:07:35.341121: [debug] Checking for project config at: /home/doug/code/stack-bug/stack.yaml
+@(Stack/Config.hs:935:9)
+2017-03-21 10:07:35.341488: [debug] Loading project config file stack.yaml
+@(Stack/Config.hs:960:13)
+2017-03-21 10:07:35.353488: [debug] Trying to decode /home/doug/.stack/build-plan-cache/x86_64-linux/lts-8.5.cache
+@(Data/Store/VersionTagged.hs:68:5)
+2017-03-21 10:07:35.384873: [debug] Success decoding /home/doug/.stack/build-plan-cache/x86_64-linux/lts-8.5.cache
+@(Data/Store/VersionTagged.hs:72:13)
+2017-03-21 10:07:35.394392: [debug] Run process: /sbin/ldconfig -p
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.397045: [debug] Process finished in [92m2ms[0m: /sbin/ldconfig -p
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.397529: [debug] Run process: /usr/bin/gcc -v
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.399906: [debug] Process finished in [92m2ms[0m: /usr/bin/gcc -v
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.400347: [debug] PIE enabled
+@(Stack/Setup.hs:577:17)
+2017-03-21 10:07:35.400623: [debug] Found shared library libtinfo.so.5 in 'ldconfig -p' output
+@(Stack/Setup.hs:553:29)
+2017-03-21 10:07:35.400959: [debug] Did not find shared library libtinfo.so.6
+@(Stack/Setup.hs:567:38)
+2017-03-21 10:07:35.401054: [debug] Did not find shared library libncursesw.so.6
+@(Stack/Setup.hs:567:38)
+2017-03-21 10:07:35.401262: [debug] Found shared library libgmp.so.10 in 'ldconfig -p' output
+@(Stack/Setup.hs:553:29)
+2017-03-21 10:07:35.401353: [debug] Did not find shared library libgmp.so.3
+@(Stack/Setup.hs:567:38)
+2017-03-21 10:07:35.401413: [debug] Using standard GHC build
+@(Stack/Setup.hs:600:9)
+2017-03-21 10:07:35.401912: [debug] Getting Cabal package version
+@(Stack/GhcPkg.hs:189:5)
+2017-03-21 10:07:35.402289: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db field --simple-output Cabal version
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.402862: [debug] Getting global package database location
+@(Stack/GhcPkg.hs:55:5)
+2017-03-21 10:07:35.402982: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db list --global
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.411529: [debug] Asking GHC for its version
+@(Stack/Setup/Installed.hs:103:13)
+2017-03-21 10:07:35.411796: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc --numeric-version
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.479355: [debug] Process finished in [92m76ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db field --simple-output Cabal version
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.491410: [debug] Process finished in [92m88ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db list --global
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.519809: [debug] Process finished in [92m107ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc --numeric-version
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.520076: [debug] Resolving package entries
+@(Stack/Setup.hs:254:5)
+2017-03-21 10:07:35.532356: [debug] Starting to execute command inside EnvConfig
+@(Stack/Runners.hs:166:18)
+2017-03-21 10:07:35.532576: [debug] Parsing the cabal files of the local packages
+@(Stack/Build/Source.hs:310:5)
+2017-03-21 10:07:35.533216: [warn] No extra-dep setting found for package at URL:
+
+git://github.com/ekmett/semigroupoids
+
+This is usually a mistake, external packages should typically
+be treated as extra-deps to avoid spurious test case failures.
+@(Stack/Config.hs:672:25)
+2017-03-21 10:07:35.538629: [debug] Parsing the targets
+@(Stack/Build/Source.hs:247:5)
+2017-03-21 10:07:35.539623: [debug] Start: getPackageFiles /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/semigroupoids.cabal
+@(Stack/Package.hs:251:21)
+2017-03-21 10:07:35.586815: [debug] Finished in 47ms: getPackageFiles /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/semigroupoids.cabal
+@(Stack/Package.hs:251:21)
+2017-03-21 10:07:35.588416: [debug] Finding out which packages are already installed
+@(Stack/Build/Installed.hs:69:5)
+2017-03-21 10:07:35.588622: [debug] Trying to decode /home/doug/code/stack-bug/.stack-work/installed-cache.bin
+@(Data/Store/VersionTagged.hs:68:5)
+2017-03-21 10:07:35.588902: [debug] Success decoding /home/doug/code/stack-bug/.stack-work/installed-cache.bin
+@(Data/Store/VersionTagged.hs:72:13)
+2017-03-21 10:07:35.589081: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --global --no-user-package-db dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.644949: [debug] Process finished in [92m55ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --global --no-user-package-db dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.667094: [debug] Ignoring package haskeline due to wanting version 0.7.3.1 instead of 0.7.3.0
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.667475: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.824378: [debug] Process finished in [92m156ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.824592: [debug] Ignoring package semigroupoids, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to wrong location: (Just (InstalledTo Snap),Local)
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.824703: [debug] Ignoring package profunctors, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.824825: [debug] Ignoring package streaming, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.824892: [debug] Ignoring package resourcet, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.824955: [debug] Ignoring package lifted-base, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825019: [debug] Ignoring package monad-control, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825080: [debug] Ignoring package transformers-base, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825262: [debug] Ignoring package lens, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825322: [debug] Ignoring package postgresql-simple, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825382: [debug] Ignoring package aeson, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825443: [debug] Ignoring package kan-extensions, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825504: [debug] Ignoring package adjunctions, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825583: [debug] Ignoring package free, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825644: [debug] Ignoring package product-profunctors, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825747: [debug] Ignoring package opaleye, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825818: [debug] Ignoring package uuid, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.825883: [debug] Ignoring package uuid-types, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826072: [debug] Ignoring package test-framework-quickcheck2, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826149: [debug] Ignoring package test-framework-hunit, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826211: [debug] Ignoring package extensible-exceptions, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826277: [debug] Ignoring package test-framework, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826339: [debug] Ignoring package regex-posix, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826400: [debug] Ignoring package regex-base, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826469: [debug] Ignoring package ansi-terminal, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826540: [debug] Ignoring package hostname, from (InstalledTo Snap,"/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb/"), due to it needing haddocks.
+@(Stack/Build/Installed.hs:199:5)
+2017-03-21 10:07:35.826759: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/pkgdb dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.855679: [debug] Process finished in [92m28ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/pkgdb dump --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.855904: [debug] Encoding /home/doug/code/stack-bug/.stack-work/installed-cache.bin
+@(Data/Store/VersionTagged.hs:51:5)
+2017-03-21 10:07:35.856373: [debug] Finished writing /home/doug/code/stack-bug/.stack-work/installed-cache.bin
+@(Data/Store/VersionTagged.hs:55:5)
+2017-03-21 10:07:35.856938: [debug] Constructing the build plan
+@(Stack/Build/ConstructPlan.hs:158:5)
+2017-03-21 10:07:35.859259: [debug] Checking if we are going to build multiple executables with the same name
+@(Stack/Build.hs:210:5)
+2017-03-21 10:07:35.859464: [debug] Executing the build plan
+@(Stack/Build/Execute.hs:458:5)
+2017-03-21 10:07:35.860353: [debug] Getting global package database location
+@(Stack/GhcPkg.hs:55:5)
+2017-03-21 10:07:35.860464: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db list --global
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.889906: [debug] Process finished in [92m29ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --no-user-package-db list --global
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:35.891761: [debug] Encoding /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/stack-build-cache
+@(Data/Store/VersionTagged.hs:51:5)
+2017-03-21 10:07:35.892176: [debug] Finished writing /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/stack-build-cache
+@(Data/Store/VersionTagged.hs:55:5)
+2017-03-21 10:07:35.892489: [info] semigroupoids-5.2: build (lib)
+@(Stack/Build/Execute.hs:830:23)
+2017-03-21 10:07:35.892780: [warn] Package semigroupoids uses a custom Cabal build, but does not use a custom-setup stanza
+@(Stack/Build/Execute.hs:1022:29)
+2017-03-21 10:07:35.892855: [warn] Not using the explicit setup deps approach based on configuration
+@(Stack/Build/Execute.hs:1027:29)
+2017-03-21 10:07:35.892915: [warn] Strongly recommend fixing the package's cabal file
+@(Stack/Build/Execute.hs:1028:29)
+2017-03-21 10:07:35.893214: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:36.598512: [debug] Process finished in [92m705ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:36.599015: [debug] Run process: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 build lib:semigroupoids --ghc-options " -ddump-hi -ddump-to-file"
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:36.653364: [info] Preprocessing library semigroupoids-5.2...
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:38.785800: [debug] Process finished in [92m2186ms[0m: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 build lib:semigroupoids --ghc-options " -ddump-hi -ddump-to-file"
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:38.786019: [debug] Start: getPackageFiles /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/semigroupoids.cabal
+@(Stack/Package.hs:251:21)
+2017-03-21 10:07:38.834569: [debug] Finished in 48ms: getPackageFiles /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/semigroupoids.cabal
+@(Stack/Package.hs:251:21)
+2017-03-21 10:07:38.837857: [debug] Encoding /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/stack-build-cache
+@(Data/Store/VersionTagged.hs:51:5)
+2017-03-21 10:07:38.838603: [debug] Finished writing /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/stack-build-cache
+@(Data/Store/VersionTagged.hs:55:5)
+2017-03-21 10:07:38.838808: [info] semigroupoids-5.2: haddock
+@(Stack/Build/Execute.hs:830:23)
+2017-03-21 10:07:38.839006: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --hyperlinked-source
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:38.957082: [debug] Process finished in [92m117ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --hyperlinked-source
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:38.957463: [warn] Package semigroupoids uses a custom Cabal build, but does not use a custom-setup stanza
+@(Stack/Build/Execute.hs:1022:29)
+2017-03-21 10:07:38.957542: [warn] Not using the explicit setup deps approach based on configuration
+@(Stack/Build/Execute.hs:1027:29)
+2017-03-21 10:07:38.957601: [warn] Strongly recommend fixing the package's cabal file
+@(Stack/Build/Execute.hs:1028:29)
+2017-03-21 10:07:38.957908: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:39.645455: [debug] Process finished in [92m687ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:39.645902: [debug] Run process: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 haddock --html --hoogle --html-location=../$pkg-$version/ --haddock-option=--hyperlinked-source
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:39.803915: [info] Running Haddock for semigroupoids-5.2...
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:39.804093: [info] Preprocessing library semigroupoids-5.2...
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930023: [info] Haddock coverage:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930242: [info]  100% (  1 /  1) in 'Data.Traversable.Instances'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930339: [info]   33% (  1 /  3) in 'Data.Semigroup.Foldable.Class'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930449: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930541: [info]     Foldable1 (src/Data/Semigroup/Foldable/Class.hs:64)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930633: [info]     Bifoldable1 (src/Data/Semigroup/Foldable/Class.hs:93)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930724: [info]   75% (  3 /  4) in 'Data.Functor.Extend'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930783: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930842: [info]     Extend (src/Data/Functor/Extend.hs:54)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930902: [info]   75% (  9 / 12) in 'Data.Functor.Bind.Class'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.930962: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931100: [info]     apDefault (src/Data/Functor/Bind/Class.hs:432)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931218: [info]     returning (src/Data/Functor/Bind/Class.hs:429)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931277: [info]     Biapply (src/Data/Functor/Bind/Class.hs:569)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931335: [info]  100% ( 13 / 13) in 'Data.Functor.Apply'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931393: [info]   75% ( 15 / 20) in 'Data.Functor.Bind'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931450: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931507: [info]     -<< (src/Data/Functor/Bind.hs:47)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931563: [info]     -<- (src/Data/Functor/Bind.hs:53)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931620: [info]     ->- (src/Data/Functor/Bind.hs:50)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931678: [info]     apDefault (src/Data/Functor/Bind/Class.hs:432)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931734: [info]     returning (src/Data/Functor/Bind/Class.hs:429)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931829: [info]  100% (  2 /  2) in 'Data.Functor.Bind.Trans'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.931917: [info]   50% (  2 /  4) in 'Data.Semigroupoid'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932004: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932134: [info]     WrappedCategory (src/Data/Semigroupoid.hs:69)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932223: [info]     Semi (src/Data/Semigroupoid.hs:78)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932310: [info]   50% (  1 /  2) in 'Data.Semigroupoid.Dual'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932390: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932445: [info]     Dual (src/Data/Semigroupoid/Dual.hs:23)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932502: [info]  100% (  2 /  2) in 'Data.Groupoid'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932559: [info]   50% (  1 /  2) in 'Data.Isomorphism'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932615: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932671: [info]     Iso (src/Data/Isomorphism.hs:25)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932728: [info]   20% (  1 /  5) in 'Data.Semigroupoid.Ob'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932785: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932841: [info]     Ob (src/Data/Semigroupoid/Ob.hs:30)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932898: [info]      (src/Data/Semigroupoid/Ob.hs:33)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.932954: [info]      (src/Data/Semigroupoid/Ob.hs:37)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933046: [info]      (src/Data/Semigroupoid/Ob.hs:41)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933103: [info]   33% (  2 /  6) in 'Data.Semigroup.Bifoldable'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933184: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933240: [info]     Bifoldable1 (src/Data/Semigroup/Foldable/Class.hs:93)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933295: [info]     bitraverse1_ (src/Data/Semigroup/Bifoldable.hs:39)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933351: [info]     bifor1_ (src/Data/Semigroup/Bifoldable.hs:43)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933407: [info]     bisequenceA1_ (src/Data/Semigroup/Bifoldable.hs:51)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933463: [info]  100% (  3 /  3) in 'Data.Functor.Alt'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933518: [info]  100% (  3 /  3) in 'Data.Functor.Plus'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933573: [info]   50% (  1 /  2) in 'Data.Semigroupoid.Static'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933628: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933683: [info]     Static (src/Data/Semigroupoid/Static.hs:42)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933738: [info]   44% (  4 /  9) in 'Data.Semigroup.Foldable'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933814: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933871: [info]     Foldable1 (src/Data/Semigroup/Foldable/Class.hs:64)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933926: [info]     traverse1_ (src/Data/Semigroup/Foldable.hs:73)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.933981: [info]     for1_ (src/Data/Semigroup/Foldable.hs:77)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934036: [info]     sequenceA1_ (src/Data/Semigroup/Foldable.hs:81)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934112: [info]     asum1 (src/Data/Semigroup/Foldable.hs:99)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934197: [info]   33% (  1 /  3) in 'Data.Semigroup.Traversable.Class'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934283: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934368: [info]     Bitraversable1 (src/Data/Semigroup/Traversable/Class.hs:60)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934453: [info]     Traversable1 (src/Data/Semigroup/Traversable/Class.hs:144)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934540: [info]   33% (  1 /  3) in 'Data.Semigroup.Bitraversable'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934625: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934701: [info]     Bitraversable1 (src/Data/Semigroup/Traversable/Class.hs:60)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934756: [info]     bifoldMap1Default (src/Data/Semigroup/Bitraversable.hs:21)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934832: [info]   33% (  1 /  3) in 'Data.Semigroup.Traversable'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934888: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.934944: [info]     Traversable1 (src/Data/Semigroup/Traversable/Class.hs:144)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935000: [info]     foldMap1Default (src/Data/Semigroup/Traversable.hs:20)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935055: [info]   62% (  5 /  8) in 'Data.Bifunctor.Apply'
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935149: [info]   Missing documentation for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935284: [info]     Biapply (src/Data/Functor/Bind/Class.hs:569)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935370: [info]     <<$>>
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935454: [info]     <<..>> (src/Data/Bifunctor/Apply.hs:27)
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935539: [info] Warning: Data.Functor.Apply: could not find link destinations for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935647: [info]     Id Id Digit Node Elem FingerTree StateL StateR StateL StateR State
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935716: [info] Warning: Data.Functor.Bind: could not find link destinations for:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:47.935771: [info]     Id Id Digit Node Elem FingerTree StateL StateR StateL StateR State
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.002482: [info] Documentation created:
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.002664: [info] .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/doc/html/semigroupoids/index.html,
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.002729: [info] .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/doc/html/semigroupoids/semigroupoids.txt
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.003878: [debug] Process finished in [92m8357ms[0m: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 haddock --html --hoogle --html-location=../$pkg-$version/ --haddock-option=--hyperlinked-source
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:48.004085: [info] semigroupoids-5.2: copy/register
+@(Stack/Build/Execute.hs:830:23)
+2017-03-21 10:07:48.004387: [warn] Package semigroupoids uses a custom Cabal build, but does not use a custom-setup stanza
+@(Stack/Build/Execute.hs:1022:29)
+2017-03-21 10:07:48.004486: [warn] Not using the explicit setup deps approach based on configuration
+@(Stack/Build/Execute.hs:1027:29)
+2017-03-21 10:07:48.004575: [warn] Strongly recommend fixing the package's cabal file
+@(Stack/Build/Execute.hs:1028:29)
+2017-03-21 10:07:48.004864: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:48.753625: [debug] Process finished in [92m748ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:48.754112: [debug] Run process: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 copy
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:48.832758: [info] Installing library in
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.832928: [info] /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/lib/x86_64-linux-ghc-8.0.2/semigroupoids-5.2-7KF7lKlv7uo7kqvCXCFrx0
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:48.876503: [debug] Process finished in [92m122ms[0m: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 copy
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:48.876864: [warn] Package semigroupoids uses a custom Cabal build, but does not use a custom-setup stanza
+@(Stack/Build/Execute.hs:1022:29)
+2017-03-21 10:07:48.876933: [warn] Not using the explicit setup deps approach based on configuration
+@(Stack/Build/Execute.hs:1027:29)
+2017-03-21 10:07:48.876992: [warn] Strongly recommend fixing the package's cabal file
+@(Stack/Build/Execute.hs:1028:29)
+2017-03-21 10:07:48.877373: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:49.609252: [debug] Process finished in [92m731ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-8.0.2 --make -odir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -hidir /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup -i -i. -package=Cabal-1.24.2.0 -clear-package-db -global-package-db -package-db=/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/pkgdb /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/Setup.lhs /home/doug/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs -main-is StackSetupShim.mainOverride -o /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup -threaded
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:49.609718: [debug] Run process: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 register
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.015689: [info] Registering semigroupoids-5.2...
+@(Stack/Build/Execute.hs:1070:67)
+2017-03-21 10:07:50.017349: [debug] Process finished in [92m407ms[0m: /home/doug/code/stack-bug/.stack-work/downloaded/I7Q5HiBqgtkE/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup --builddir=.stack-work/dist/x86_64-linux/Cabal-1.24.2.0 register
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.017614: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/pkgdb describe --simple-output semigroupoids --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.052089: [debug] Process finished in [92m34ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/ghc-pkg --user --no-user-package-db --package-db /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/pkgdb describe --simple-output semigroupoids --expand-pkgroot
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.052545: [debug] Encoding /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/flag-cache/semigroupoids-5.2-7KF7lKlv7uo7kqvCXCFrx0
+@(Data/Store/VersionTagged.hs:51:5)
+2017-03-21 10:07:50.053135: [debug] Finished writing /home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/flag-cache/semigroupoids-5.2-7KF7lKlv7uo7kqvCXCFrx0
+@(Data/Store/VersionTagged.hs:55:5)
+2017-03-21 10:07:50.053525: [info] Updating Haddock index for local packages in
+/home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/doc/index.html
+@(Stack/Build/Haddock.hs:233:17)
+2017-03-21 10:07:50.053821: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --gen-contents --gen-index -i ./semigroupoids-5.2,./semigroupoids-5.2/semigroupoids.haddock
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.202057: [debug] Process finished in [92m148ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --gen-contents --gen-index -i ./semigroupoids-5.2,./semigroupoids-5.2/semigroupoids.haddock
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:50.206021: [info] Updating Haddock index for local packages and dependencies in
+/home/doug/code/stack-bug/.stack-work/install/x86_64-linux/lts-8.5/8.0.2/doc/all/index.html
+@(Stack/Build/Haddock.hs:233:17)
+2017-03-21 10:07:51.290648: [debug] Run process: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --gen-contents --gen-index -i ../containers-0.5.7.1,../containers-0.5.7.1/containers.haddock -i ../bytestring-0.10.8.1,../bytestring-0.10.8.1/bytestring.haddock -i ../base-4.9.1.0,../base-4.9.1.0/base.haddock -i ../hashable-1.2.5.0,../hashable-1.2.5.0/hashable.haddock -i ../integer-gmp-1.0.0.1,../integer-gmp-1.0.0.1/integer-gmp.haddock -i ../pretty-1.1.3.3,../pretty-1.1.3.3/pretty.haddock -i ../text-1.2.2.1,../text-1.2.2.1/text.haddock -i ../bifunctors-5.4.1,../bifunctors-5.4.1/bifunctors.haddock -i ../base-orphans-0.5.4,../base-orphans-0.5.4/base-orphans.haddock -i ../contravariant-1.4,../contravariant-1.4/contravariant.haddock -i ../ghc-prim-0.5.0.0,../ghc-prim-0.5.0.0/ghc-prim.haddock -i ../stm-2.4.4.1,../stm-2.4.4.1/stm.haddock -i ../transformers-0.5.2.0,../transformers-0.5.2.0/transformers.haddock -i ../comonad-5,../comonad-5/comonad.haddock -i ../void-0.7.1,../void-0.7.1/void.haddock -i ../StateVar-1.1.0.4,../StateVar-1.1.0.4/StateVar.haddock -i ../deepseq-1.4.2.0,../deepseq-1.4.2.0/deepseq.haddock -i ../array-0.5.1.1,../array-0.5.1.1/array.haddock -i ../semigroupoids-5.2,../semigroupoids-5.2/semigroupoids.haddock -i ../binary-0.8.3.0,../binary-0.8.3.0/binary.haddock -i ../transformers-compat-0.5.1.4,../transformers-compat-0.5.1.4/transformers-compat.haddock -i ../distributive-0.5.2,../distributive-0.5.2/distributive.haddock -i ../tagged-0.8.5,../tagged-0.8.5/tagged.haddock -i ../ghc-boot-th-8.0.2,../ghc-boot-th-8.0.2/ghc-boot-th.haddock -i ../template-haskell-2.11.1.0,../template-haskell-2.11.1.0/template-haskell.haddock -i ../semigroups-0.18.2,../semigroups-0.18.2/semigroups.haddock
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:53.138052: [debug] Process finished in [92m1846ms[0m: /home/doug/.stack/programs/x86_64-linux/ghc-8.0.2/bin/haddock --gen-contents --gen-index -i ../containers-0.5.7.1,../containers-0.5.7.1/containers.haddock -i ../bytestring-0.10.8.1,../bytestring-0.10.8.1/bytestring.haddock -i ../base-4.9.1.0,../base-4.9.1.0/base.haddock -i ../hashable-1.2.5.0,../hashable-1.2.5.0/hashable.haddock -i ../integer-gmp-1.0.0.1,../integer-gmp-1.0.0.1/integer-gmp.haddock -i ../pretty-1.1.3.3,../pretty-1.1.3.3/pretty.haddock -i ../text-1.2.2.1,../text-1.2.2.1/text.haddock -i ../bifunctors-5.4.1,../bifunctors-5.4.1/bifunctors.haddock -i ../base-orphans-0.5.4,../base-orphans-0.5.4/base-orphans.haddock -i ../contravariant-1.4,../contravariant-1.4/contravariant.haddock -i ../ghc-prim-0.5.0.0,../ghc-prim-0.5.0.0/ghc-prim.haddock -i ../stm-2.4.4.1,../stm-2.4.4.1/stm.haddock -i ../transformers-0.5.2.0,../transformers-0.5.2.0/transformers.haddock -i ../comonad-5,../comonad-5/comonad.haddock -i ../void-0.7.1,../void-0.7.1/void.haddock -i ../StateVar-1.1.0.4,../StateVar-1.1.0.4/StateVar.haddock -i ../deepseq-1.4.2.0,../deepseq-1.4.2.0/deepseq.haddock -i ../array-0.5.1.1,../array-0.5.1.1/array.haddock -i ../semigroupoids-5.2,../semigroupoids-5.2/semigroupoids.haddock -i ../binary-0.8.3.0,../binary-0.8.3.0/binary.haddock -i ../transformers-compat-0.5.1.4,../transformers-compat-0.5.1.4/transformers-compat.haddock -i ../distributive-0.5.2,../distributive-0.5.2/distributive.haddock -i ../tagged-0.8.5,../tagged-0.8.5/tagged.haddock -i ../ghc-boot-th-8.0.2,../ghc-boot-th-8.0.2/ghc-boot-th.haddock -i ../template-haskell-2.11.1.0,../template-haskell-2.11.1.0/template-haskell.haddock -i ../semigroups-0.18.2,../semigroups-0.18.2/semigroups.haddock
+@(System/Process/Read.hs:306:3)
+2017-03-21 10:07:53.149826: [info] Haddock index for snapshot packages already up to date at:
+/home/doug/.stack/snapshots/x86_64-linux/lts-8.5/8.0.2/doc/index.html
+@(Stack/Build/Haddock.hs:245:15)
